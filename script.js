@@ -34,3 +34,6 @@ if(firstRandomNumber>secondRandomNumber){
 }
 }
 
+// let player1 = window.prompt("Enter Player 01 Name");
+// let player2 = window.prompt("Enter Player 02 Name");
+
