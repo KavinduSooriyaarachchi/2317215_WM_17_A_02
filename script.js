@@ -8,7 +8,7 @@ const firstDiceImage = 'assets/dice' + firstRandomNumber + '.svg';
 
 
 function btn1click(){
-document.querySelectorAll('img')[0].setAttribute('src',firstDiceImage);
+document.querySelector(".dice1").setAttribute('src',firstDiceImage);
 
 }
 
@@ -21,16 +21,16 @@ const secondRandomNumber =
 const secondDiceImage = 'assets/dice' + secondRandomNumber + '.svg';
 
 function btn2click(){
-document.querySelectorAll('img')[1].setAttribute('src',secondDiceImage);
+document.querySelector(".dice2").setAttribute('src',secondDiceImage);
 
 
 // logic for winner
 if(firstRandomNumber>secondRandomNumber){
-  document.querySelector('h1').innerHTML = 'The Winner is User 1';
+  document.querySelector('.title').innerHTML = 'The Winner is User 1';
 }else if(firstRandomNumber<secondRandomNumber){
-  document.querySelector('h1').innerHTML = 'The Winner is User 2';
+  document.querySelector('.title').innerHTML = 'The Winner is User 2';
 }else{
-  document.querySelector('h1').innerHTML = 'It is a Draw!';
+  document.querySelector('.title').innerHTML = 'It is a Draw!';
 }
 }
 
